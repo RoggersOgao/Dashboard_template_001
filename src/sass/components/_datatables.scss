@@ -1,0 +1,47 @@
+.css-1jbbcbn-MuiDataGrid-columnHeaderTitle{
+    font-size:1.3rem;
+    font-weight: 600;
+}
+.css-r11z79-MuiDataGrid-root .MuiDataGrid-cellContent {
+    font-size:1.2rem;
+}
+
+.datatable{
+    .cellwithimg{
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        font-size:1.2rem;
+        .cellimg{
+            width:3.2rem;
+            height: 3.2rem;
+            border-radius: 50%;
+        }
+    }
+
+    .active{
+        color:green;
+        font-size:1.2rem;
+    }
+    .passive{
+        font-size: 1.2rem;
+        color:orange;
+    }
+}
+
+
+
+.actionsContainer{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    
+    &__view{
+        color:orange;
+        cursor: pointer;
+    }
+    &__delete{
+        color:rgb(239, 22, 22);
+        cursor: pointer;
+    }
+}

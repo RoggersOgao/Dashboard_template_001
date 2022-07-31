@@ -1,0 +1,59 @@
+.card{
+    width:95%;
+    margin:0 auto;
+    &__container{
+        border:.1px solid rgba(128, 128, 128, 0.037);
+        width:100%;
+        padding:1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        border-radius: .6rem;
+        box-shadow: 0px 8px 8px -5px rgba(128, 128, 128, 0.275);
+        height: 10rem;
+        &__left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+           &--title{
+            font-size:1.2rem;
+            font-weight: bold;
+            color:$list-color;
+           }
+           &--counter{
+            font-size:3rem;
+            font-weight: 600;
+            color:$title-color;
+           }
+           &--link{
+            display: flex;
+            align-items: center;
+            color:$logo-blue;
+            cursor:pointer;
+            justify-content: center;
+           }
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            &--percentage{
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                font-weight: bold;
+
+                &.positive{
+                    color:green;
+                }
+                &.negative{
+                    color:red;
+                }
+
+            }
+        }
+    }
+    
+}

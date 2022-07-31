@@ -1,0 +1,109 @@
+.newContainer{
+    &__title{
+font-size:3rem;
+font-weight: bold;
+color:$list-color;
+opacity: .4;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin:1rem;
+
+.back{
+border:none;
+color:$logo-blue;
+padding: 1rem 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+font-size: 1.3rem;
+background-color: $border-color;
+text-decoration: none;
+
+&:hover{
+    box-shadow: 0px 4px 4px -2px $shadow;
+}
+
+}
+    }
+    &__form{
+        display: flex;
+        width:95%;
+        margin:0 auto;
+        box-shadow: 2px 8px 8px -5px $shadow;
+        border:1px solid $border-shadow;
+        min-height: 50vh;
+        &--left{
+            flex:1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+            .cameraIcon{
+                background-color: rgb(217, 217, 217);
+                width:22rem;
+                height: 22rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color:rgb(183, 183, 183);
+                
+            }
+        }
+        &--right{
+                flex:2;
+                display: flex;
+                align-items: center;
+
+                .container__form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:2rem;
+                    .form-group{
+                        width:40% ;
+
+                        label{
+                            font-size:1.2rem;
+                        }
+                        input{
+                            font-size:1.2rem;
+                            width:100%;
+                            padding:.6rem;
+                            border:none;
+                            border-bottom: .5px solid $border-color;
+
+                            &:focus,&:active{
+                                outline:none;
+
+                                &::placeholder{
+                                    transition: all .3s ease;
+                                    color:rgb(195, 195, 195);
+                                }
+                            }
+                            
+                        }
+                    }
+
+                    button{
+                
+                        width:20%;
+                        border:none;
+                        background-color: $logo-blue;
+                        color:white;
+                        border-radius: 6px;
+
+                        &:hover{
+                            box-shadow: 1px 2px 14px -3px black;
+                        }
+
+                        &:active{
+                            box-shadow:1px 2px 8px -2px black;
+                        }
+                    }
+                }
+        }
+    }
+}

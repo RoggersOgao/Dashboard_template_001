@@ -1,0 +1,27 @@
+.singlePage{
+    display: flex;
+    flex-direction: column;
+
+    &__top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        .left{
+            flex:1;
+            box-shadow: 0 8px 8px -5px $shadow;
+            border: .4px solid $border-shadow;
+        }
+        .right{
+            flex:1;
+            height:100%;
+        }
+    }
+    &__bottom{
+// todo
+            box-shadow: 0 8px 8px -5px $shadow;
+            margin:2rem 0;
+
+    }
+
+}

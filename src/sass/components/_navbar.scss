@@ -1,0 +1,89 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    border: 1px solid $border-color;
+    border-left:none;
+    justify-content: space-between;
+    
+    &__search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        input{
+            padding:.7rem;
+            border:.3px solid $border-color;
+            border-radius: 2rem;
+            margin:0 2rem;
+            color:$list-color;
+
+            &:focus{
+                outline:none;
+
+                &::placeholder{
+                    transition: all .2s ease-in-out;
+                    color:$border-color;
+                }
+            }
+            &::placeholder{
+                color:$list-color;
+            }
+        }
+        .icon{
+            font-size:1.4rem;
+            color:$list-color;
+            transform: translateX(-5rem);
+        }
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        margin-right:2rem;
+   
+        &--item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:1.3rem;
+            position: relative;
+            color:$logo-blue;
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right:1.6rem;
+            }
+            .icon1{
+                font-size:1.7rem;
+            }
+
+            .avatar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__img{
+                    width:3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    cursor:pointer;
+                }
+            }
+
+            .counter{
+                width:1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                background-color:$notification;
+                font-size: 1rem;
+                font-weight: bold;
+                color:white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position:absolute;
+                top: -7px;
+                right: -7px;
+            }
+        }
+    }
+}

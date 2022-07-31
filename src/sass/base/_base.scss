@@ -1,0 +1,26 @@
+
+
+$logo-blue:rgb(26, 94, 220);
+$border-color:rgba(128, 128, 128, 0.144);
+$title-color:rgb(5, 5, 5);
+$icon-color:rgba(29, 29, 29, 0.715);
+$list-color:rgb(160, 160, 160);
+$notification:rgba(255, 0, 0, 0.924);
+$shadow:rgba(128, 128, 128, 0.275);
+$border-shadow:rgba(128, 128, 128, 0.037);
+	*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    font-size:10px;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+	

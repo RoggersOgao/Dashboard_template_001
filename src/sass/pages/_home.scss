@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    &__container{
+        flex:6;
+        .card{
+            margin-top: 1rem;
+            display:grid;
+            justify-items: center;
+            align-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+            grid-gap:2rem;
+        }
+        .charts{
+            margin: 2rem;
+            display: flex;
+            gap:.4rem;
+        }
+        .table{
+            box-shadow : 0 8px 8px -5px $shadow;
+            border:.3px solid $border-shadow;
+            margin-bottom: 2rem;
+            &__title{
+                padding:1rem;
+                font-size:2rem;
+                font-weight: bold;
+                color:$list-color;
+            }
+        }
+    }
+}

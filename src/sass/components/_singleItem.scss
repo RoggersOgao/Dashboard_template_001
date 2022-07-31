@@ -1,0 +1,92 @@
+.singleItem{
+    padding:2rem;
+    &__top{
+        &--left{
+            height: 100%;
+            .singleItemCard{
+                &__title{
+                    display: flex;
+                    justify-content: end;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color:$list-color;
+                }
+                &__info{
+                    display: grid;
+                    justify-items: center;
+                    align-content: center;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    grid-gap:2rem;
+                    &--img{
+                        width:25.5rem;
+                        height: 25.5rem;
+                        border-radius:50%;
+                    }
+                    &--rightSide{
+                        font-size:1.2rem;
+                        color:$list-color;
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        width:100%;
+                        .email{
+                            width:100%;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            gap:1rem;
+                            margin-bottom: .7rem;
+                            span{
+                                font-size:1.3rem;
+                                font-weight: 600;
+                                color:$icon-color;
+                            }
+
+                        }
+                        .phone{
+                            width:100%;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            margin-bottom: .7rem;
+                            gap:1rem;
+                            span{
+                                font-size:1.3rem;
+                                font-weight: 600;
+                                color:$icon-color;
+                            }
+                        }
+                        .address{
+                            width:100%;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            margin-bottom: .7rem;
+                            gap:1rem;
+                            span{
+                                font-size:1.3rem;
+                                font-weight: 600;
+                                color:$icon-color;
+                            }
+                        }
+                        .country{
+                            width:100%;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            margin-bottom: .7rem;
+                            gap:1rem;
+                            span{
+                                font-size:1.3rem;
+                                font-weight: 600;
+                                color:$icon-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
