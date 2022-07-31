@@ -1,6 +1,6 @@
 
 
-##beautiful sass dashboard Template
+## Beautiful sass dashboard Template
 ![image](https://user-images.githubusercontent.com/56106453/182020272-7354e18b-a4dc-4553-85e1-5877cf69ddac.png)
 
 ### dark mode enabled
